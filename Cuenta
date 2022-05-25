@@ -1,0 +1,16 @@
+class cuenta():
+  def __init__ (self,titular,cantidad, cantidad_a_ingresar, cantidad_a_retirar):
+    self.titular= titular
+    self.cantidad= cantidad
+    self.cantidad_a_ingresar= cantidad_a_ingresar
+    self.cantidad_a_retirar= cantidad_a_retirar
+  def mostrar(self):
+    print( "La cuenta esta registrada a nombre de: ", self.titular,"cuya cantidad es:",self.cantidad)
+  def ingresar(self):
+    print("Se ha ingresado la siguiente cantidad: ",self.cantidad_a_ingresar)
+  def retirar(self):
+    print("Se retira una cantidad a la cuenta: ", self.cantidad_a_retirar)
+cuenta1=cuenta("Brenda", "0", "100", "50")
+cuenta1.mostrar()
+cuenta1.ingresar()
+cuenta1.retirar()
